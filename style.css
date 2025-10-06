@@ -16,19 +16,16 @@ body {
   font-family: "Times New Roman", serif;
   margin: 0;
   padding: 20px;
+  color: #3e3c3c;
 }
 
 .paper {
-  background: #f7f4ef;
-  border: 8px solid #111;
+  position: relative;
+  background: url(paper.jpg);
   max-width: 900px;
   margin: 0 auto;
   padding: 40px 50px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
-}
-
-img {
-  filter: sepia(60%);
 }
 
 /* === HEADER === */
@@ -51,7 +48,7 @@ img {
   display: flex;
   justify-content: space-between;
   font-size: 14px;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #3e3c3c;
   padding: 5px 0;
   margin-bottom: 20px;
 }
@@ -73,13 +70,17 @@ img {
   letter-spacing: -3px;
   margin-bottom: 5px;
   font-family: "somefont";
+  margin-top: -30px;
+  margin-bottom: -10px;
 }
 
 .subtitle {
   text-align: center;
   font-size: 18px;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  font-family: "somefont";
+  margin-top: -10px;
 }
 
 /* === HEADLINE SECTION === */
