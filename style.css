@@ -25,7 +25,6 @@ body {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
 }
 
-/* === HEADER === */
 .big-header {
   position: relative;
   border-bottom: 3px solid #000;
@@ -33,14 +32,12 @@ body {
   text-align: center;
 }
 
-/* Centered newspaper title */
 .main-header span {
   font-family: "OldEnglishTextMT", serif;
   font-size: 80px;
   display: inline-block;
 }
 
-/* === UNDER HEADER === */
 .under-header {
   display: flex;
   flex-wrap: wrap;
@@ -60,7 +57,6 @@ body {
   font-size: 9px;
 }
 
-/* === TITLE & SUBTITLE === */
 .title {
   text-align: center;
   font-weight: bold;
@@ -79,7 +75,6 @@ body {
   margin-top: -10px;
 }
 
-/* === HEADLINE SECTION === */
 .headline {
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
@@ -87,54 +82,41 @@ body {
   margin-bottom: 20px;
 }
 
-/* --- IMAGE ROW --- */
 .headline-top {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
 }
-/*
-.firstimg {
-  flex: 2 1 400px;  
-  opacity: 0.7;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}*/
 
-/* keep image on top, text row under it */
 .firstimg {
-  /* keep your original behaviour */
   flex: 2 1 400px;
   display: flex;
-  flex-direction: column; /* image first, then text row */
+  flex-direction: column;
   gap: 12px;
+  opacity: 0.7;
 }
 
-/* the row that holds the two paragraphs */
 .firstimg .headline-bottom {
   display: flex;
-  flex-wrap: wrap;       /* allow stacking when narrow */
-  gap: 20px;             /* spacing between the two paragraphs */
+  flex-wrap: wrap; 
+  gap: 20px;   
   align-items: flex-start;
 }
 
-/* each paragraph box: side-by-side when enough space, stack when not */
 .firstimg .headline-bottom > * {
-  flex: 1 1 calc(50% - 10px); /* try to be half width (accounting for gap) */
-  min-width: 260px;           /* won't wrap until container < ~520px */
+  flex: 1 1 calc(50% - 10px);
+  min-width: 260px; 
   box-sizing: border-box;
-  margin: 0;                  /* keep spacing consistent with your design */
+  margin: 0;   
   font-size: 15px;
   line-height: 1.5;
   text-align: justify;
 }
 
-
 .secondimg {
   flex: 1 1 250px;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .firstimg img,
@@ -143,7 +125,6 @@ body {
   height: auto;
 }
 
-/* Titles below images */
 .story-headline {
   border-bottom: 1px solid #000;
   font-weight: bold;
@@ -169,13 +150,12 @@ body {
 
 
 .headline-bottom > div {
-  flex: 1 1 420px; /* forces stacking when smaller */
+  flex: 1 1 420px; 
   font-size: 15px;
   line-height: 1.5;
   text-align: justify;
 }
 
-/* === ADVERTISEMENT === */
 .advertisement {
   border: 3px solid #000;
   margin-top: 30px;
@@ -196,7 +176,6 @@ body {
   font-size: 18px;
 }
 
-/* === FOOTER === */
 .card-footer {
   border-top: 3px solid #000;
   display: flex;
@@ -209,6 +188,6 @@ body {
 }
 
 .card-footer > * {
-  flex: 1 1 250px; /* auto stack when narrow */
+  flex: 1 1 250px; 
   text-align: center;
 }
